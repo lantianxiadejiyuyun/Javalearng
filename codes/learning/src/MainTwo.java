@@ -10,8 +10,5 @@ public class MainTwo {
         System.out.println(data);
         //变量可以被修改
 
-
-
-
     }
 }
