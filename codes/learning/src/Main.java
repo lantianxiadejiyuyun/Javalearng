@@ -14,7 +14,7 @@ public class Main {
     }
 
     // 打印方法 关键字
-    // public static void 方法名 (传入值) 需要加入需要传入的类型 类似 TypeStript
+    // public static void 方法名 (传入值) 需要加入需要传入的类型 类似 TypeScript
     public static void functionPrint(String name) {
 
         System.out.println(name);
