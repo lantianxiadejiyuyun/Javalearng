@@ -15,4 +15,11 @@ public class suanshu {
 
         return "dawdawdwd";
     }
+
+    public static void test() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(suanshu());
+        }
+    }
 }
+
