@@ -2,25 +2,10 @@ public class ObjectOriented {
 
     public static void main(String[] args) {
         HeroList hero = new HeroList();
-        hero.saveName("我是用户");
-        hero.saveAge(20);
-        hero.saveMap("这是地址存储");
-
-        System.out.println(hero.getName() + " " + hero.getAge() + " " + hero.getMap());
-
-
-        HeroList hero2 = new HeroList();
-        hero2.saveName("这是第二个用户");
-        hero2.saveAge(67);
-        hero2.saveMap("山东省潍坊市奎文区华安东方明珠");
-        System.out.println(hero2.getName() + " " + hero2.getAge() + " " + hero2.getMap());
-
-
-        HeroList hero3 = new HeroList();
-        hero3.saveName("这是第三个用户");
-        hero3.saveAge(54);
-        hero3.saveMap("山东省潍坊市奎文区华安东方明珠");
-        System.out.println(hero3.getName() + " " + hero3.getAge() + " " + hero3.getMap());
+        hero.saveName("这是第三个用户");
+        hero.saveAge(54);
+        hero.saveMap("山东省潍坊市奎文区华安东方明珠");
+        hero.print();
 
     }
 }
@@ -44,7 +29,7 @@ class HeroList {
     }
 
 
-    // 保存信息
+    // 保存信息 方法使用
     public void saveName(String name) {
         this.name = name;
     }
@@ -55,5 +40,9 @@ class HeroList {
 
     public void saveMap(String map) {
         this.map = map;
+    }
+
+    public void print() {
+        System.out.println("当前地址:" + this.map);
     }
 }
