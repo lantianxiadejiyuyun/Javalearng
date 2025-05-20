@@ -7,6 +7,11 @@ public class ObjectOriented {
         hero.saveMap("山东省潍坊市奎文区华安东方明珠");
         hero.print();
 
+        String printData =  hero.getPrintName("山本！","我日你仙人！");
+        int numberData =  hero.getPrintName(1,114513);
+
+        System.out.println(printData);
+        System.out.println(numberData);
     }
 }
 // 定义类对象
@@ -44,5 +49,21 @@ class HeroList {
 
     public void print() {
         System.out.println("当前地址:" + this.map);
+    }
+
+    // 方法重载
+    public String getPrintName(String a, String b) {
+
+        String printName = "";
+        printName += a;
+        printName += b;
+        return printName;
+    }
+
+    public int getPrintName(int a, int b) {
+
+        int printName = 0;
+        printName = a + b;
+        return printName;
     }
 }

@@ -21,5 +21,7 @@ public class suanshu {
             System.out.println(suanshu());
         }
     }
+
+
 }
 
